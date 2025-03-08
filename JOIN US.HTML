@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN US</title>
+</head>
+
+<body>
+
+    <nav>
+        <image src="Images/club logo.webp" alt="BUE image" width="50" height="50">
+            <a href="INDEX.HTML">Home</a>
+            <a href="ABOUT.HTML">About</a>
+            <a href="TEAMS.HTML">Teams</a>
+            <a href="JOIN US.HTML">Join Us</a>
+            <a href="CONTACT US.HTML">Contact Us</a>
+            <input type="button" value="Login"><br><b>
+    </nav>
+
+    <form on submit="register">
+        <h1>Club Registeration Form</h1>
+        <p>Please fill out the following form with your correct details to become a part of our BUE soccer club.</p>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" placeholder="Capital Letters" required>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" placeholder="Capital Letters" required><br><br>
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" required>
+        <label for="address">Address:</label>
+        <input type="text" id="adress" name="address"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="0333-4299654" required><br><br>
+        <p>Choose your desired team:</p>
+        <input type="radio" id="Youth Team" name="desired team" value="Youth Team">
+        <label for="Youth Team">Youth Team</label><br>
+        <input type="radio" id="Senior Men Team" name="desired team" value="Senior Men Team">
+        <label for="Senior Men Team">Senior Men Team</label><br>
+        <input type="radio" id="Senior Women Team" name="desired team" value="Senior Women Team">
+        <label for="Senior Women Team">Senior Women Team</label><br>
+        <input type="radio" id="Junior Men Team" name="desired team" value="Junior Men Team">
+        <label for="Junior Men Team">Junior Men Team</label><br>
+        <input type="radio" id="Junior Women Team" name="desired team" value="Junior Women Team">
+        <label for="Junior Women Team">Junior Women Team</label><br><br>
+        <label for="position">Preferred Position:</label>
+            <select id="position" name="position" required>
+                <option value="">Select Position</option>
+                <option value="Goalkeeper">Goalkeeper</option>
+                <option value="Defender">Defender</option>
+                <option value="Midfielder">Midfielder</option>
+                <option value="Forward">Forward</option>
+            </select>
+           <p>Have you ever joined any club before?</p>
+           <input type="radio" id="Yes" name="joined any club" Value="Yes">
+           <label for="yes">Yes </label>
+           <input type="radio" id="No" name="joined any club" Value="No">
+           <label for="No">No </label><br><br>
+           <p>Comment (If any)</p>
+           <textarea id="comment" name="comment"style="width: 40%; height: 100px; resize: none;"></textarea><br><br>
+           <button type="submit">Submit</button>
+           
+    </form>
+</body>
+
+</html>
